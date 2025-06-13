@@ -1,20 +1,20 @@
 using UnityEngine;
 
-enum PathDirection
-{
-    Horizontal,
-    Vertical
-}
-
-enum Element
-{
-    None,
-    Corridor,
-    Rotation
-}
-
 public class PathGenerator : MonoBehaviour
 {
+    enum PathDirection
+    {
+        Horizontal,
+        Vertical
+    }
+
+    enum Element
+    {
+        None,
+        Corridor,
+        Rotation
+    }
+
     [SerializeField] private int horizontal;
     [SerializeField] private int vertical;
 
@@ -76,7 +76,6 @@ public class PathGenerator : MonoBehaviour
                 }
             }
 
-            //Debug.Log($"{_grid[0, 2]}");
             // Place rotation joints
             _grid[_verticalCorridorCount * 2, 0] = Element.Rotation;
             if (horizontal >= 2)
