@@ -131,7 +131,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 102538661}
-  - component: {fileID: 102538663}
+  - component: {fileID: 102538662}
   m_Layer: 0
   m_Name: Procedural Generator
   m_TagString: Untagged
@@ -154,7 +154,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &102538663
+--- !u!114 &102538662
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -163,11 +163,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 102538659}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01ad209e88bfd9249bc84d33ba329f64, type: 3}
+  m_Script: {fileID: 11500000, guid: 3a39ff27084c3b547ad210ef3662723d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   gridWidth: 10
   gridHeight: 10
+  attempts: 1000
   gridParent: {fileID: 1166915370}
   tilePrefab: {fileID: 1863251473805854552, guid: 830bb7fc8509fb747b06917a797202bb, type: 3}
   corridorPrefab: {fileID: 6110493566183101175, guid: 59fba0ac12493f542aba8802d6d8f45e, type: 3}
